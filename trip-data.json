@@ -1,0 +1,3575 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "driving": false,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "hulunbuir-arxan-20260927",
+    "title": "呼伦贝尔 × 阿尔山 10 日",
+    "language": "zh-CN",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-06-upland-basin.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-09-27",
+    "endDate": "2026-10-06",
+    "dayCount": 10,
+    "nightCountAway": 9,
+    "countries": [
+      {
+        "code": "CN",
+        "name": "China",
+        "nameZh": "中国",
+        "nameEn": "CHINA"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "CN"
+    ],
+    "citiesAndAreas": [
+      "海拉尔",
+      "额尔古纳",
+      "根河",
+      "莫尔道嘎",
+      "室韦",
+      "恩和",
+      "黑山头",
+      "莫日格勒河",
+      "红花尔基",
+      "阿尔山"
+    ],
+    "routeSummary": "海拉尔 → 额尔古纳 → 根河 → 莫尔道嘎 → 室韦 → 恩和 → 黑山头 → 莫日格勒河 → 阿尔山 → 海拉尔，全程当地包车，10 天 9 晚，3 人同行",
+    "groupSize": 3,
+    "primaryDestinationName": "呼伦贝尔 · 阿尔山",
+    "primaryDestinationCity": "海拉尔",
+    "primaryDestinationNameEn": "HULUNBUIR · ARXAN"
+  },
+  "flightJourneys": [
+    {
+      "id": "jny-out",
+      "title": "去程 深圳 → 海拉尔",
+      "date": "2026-09-27"
+    },
+    {
+      "id": "jny-back",
+      "title": "返程 海拉尔 → 通辽 → 石家庄 → 深圳",
+      "date": "2026-10-06"
+    }
+  ],
+  "flights": [
+    {
+      "id": "flt-1",
+      "journeyId": "jny-out",
+      "sequence": 1,
+      "airline": {
+        "name": "东海航空",
+        "nameZh": "东海航空"
+      },
+      "flightNumber": "DZ6359",
+      "departure": {
+        "airportCode": "SZX",
+        "city": "深圳",
+        "date": "2026-09-27",
+        "time": "09:50",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "HLD",
+        "city": "海拉尔",
+        "date": "2026-09-27",
+        "time": "14:30",
+        "utcOffset": "+08:00"
+      }
+    },
+    {
+      "id": "flt-2",
+      "journeyId": "jny-back",
+      "sequence": 1,
+      "airline": {
+        "name": "天骄航空",
+        "nameZh": "天骄航空"
+      },
+      "flightNumber": "9D5666",
+      "departure": {
+        "airportCode": "HLD",
+        "city": "海拉尔",
+        "date": "2026-10-06",
+        "time": "14:55",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "TGO",
+        "city": "通辽",
+        "date": "2026-10-06",
+        "time": "16:15",
+        "utcOffset": "+08:00"
+      },
+      "note": "通辽转场衔接约 3 小时 05 分；与下一段由不同航司承运，行李能否直挂需向出票平台确认"
+    },
+    {
+      "id": "flt-3",
+      "journeyId": "jny-back",
+      "sequence": 2,
+      "airline": {
+        "name": "春秋航空",
+        "nameZh": "春秋航空"
+      },
+      "flightNumber": "9C6540",
+      "departure": {
+        "airportCode": "TGO",
+        "city": "通辽",
+        "date": "2026-10-06",
+        "time": "19:20",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "SZX",
+        "city": "深圳",
+        "date": "2026-10-07",
+        "time": "01:00",
+        "utcOffset": "+08:00"
+      },
+      "note": "同航班经停石家庄（20:55 抵达 / 21:50 续飞），是否需要下机与重新安检以现场通知为准"
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "acc-1",
+      "checkIn": "2026-09-27",
+      "checkOut": "2026-09-28",
+      "name": "海拉尔艾瑞锦华酒店",
+      "roomType": "家庭房 1.8m＋1.2m",
+      "city": "海拉尔",
+      "status": "confirmed",
+      "note": "套餐含；确认 3 人早餐、接机和安静房"
+    },
+    {
+      "id": "acc-2",
+      "checkIn": "2026-09-28",
+      "checkOut": "2026-09-29",
+      "name": "根河西乌乞亚撮罗子酒店",
+      "roomType": "家庭房 1.8m＋1.2m",
+      "city": "根河",
+      "status": "confirmed",
+      "note": "套餐含；确认供暖、独卫、热水和 3 人用品"
+    },
+    {
+      "id": "acc-3",
+      "checkIn": "2026-09-29",
+      "checkOut": "2026-09-30",
+      "name": "室韦蓝湖酒店",
+      "roomType": "家庭房 1.8m＋1.2m",
+      "city": "室韦",
+      "status": "confirmed",
+      "note": "套餐含；确认供暖、早餐时间和 3 人入住政策"
+    },
+    {
+      "id": "acc-4",
+      "checkIn": "2026-09-30",
+      "checkOut": "2026-10-01",
+      "name": "恩和古纳洲海花园酒店",
+      "roomType": "双床 1.5m×2",
+      "city": "恩和",
+      "status": "confirmed",
+      "note": "套餐含；向供应商索要准确定位并确认供暖"
+    },
+    {
+      "id": "acc-5",
+      "checkIn": "2026-10-01",
+      "checkOut": "2026-10-02",
+      "name": "黑山头神飞庄园",
+      "roomType": "亲子房 1.5m＋1.2m",
+      "city": "黑山头",
+      "status": "confirmed",
+      "note": "套餐含；确认永久建筑和稳定供暖"
+    },
+    {
+      "id": "acc-6",
+      "checkIn": "2026-10-02",
+      "checkOut": "2026-10-03",
+      "name": "图嘎营地野奢蒙古包",
+      "roomType": "家庭蒙古包 1.8m＋1.2m",
+      "city": "莫日格勒河",
+      "status": "confirmed",
+      "note": "套餐含；确认 10 月营业、供暖、热水和抗风"
+    },
+    {
+      "id": "acc-7",
+      "checkIn": "2026-10-03",
+      "checkOut": "2026-10-04",
+      "name": "阿尔山渔家乐民宿",
+      "roomType": "豪华双床 1.5m×2",
+      "city": "阿尔山景区内／服务区",
+      "status": "confirmed",
+      "note": "套餐含；确认车辆能否送达、晚餐、供暖和次日景交衔接"
+    },
+    {
+      "id": "acc-8",
+      "checkIn": "2026-10-04",
+      "checkOut": "2026-10-05",
+      "name": "阿尔山成悦酒店",
+      "roomType": "豪华家庭房 1.5m×2",
+      "city": "阿尔山市区",
+      "status": "confirmed",
+      "note": "套餐含；确认是否含温泉泡池"
+    },
+    {
+      "id": "acc-9",
+      "checkIn": "2026-10-05",
+      "checkOut": "2026-10-06",
+      "name": "海拉尔自订酒店",
+      "roomType": "待定",
+      "city": "海拉尔",
+      "status": "pending",
+      "note": "待补充：优先供暖稳定、含 3 人早餐、可延迟退房且能协助送机的市区酒店"
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": null,
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": []
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-09-27",
+      "title": "抵达海拉尔 · 补给与适应",
+      "locations": [
+        "海拉尔"
+      ],
+      "schedule": [
+        {
+          "id": "d1-1",
+          "time": "09:50",
+          "type": "flight",
+          "text": "DZ6359 深圳宝安T3 起飞"
+        },
+        {
+          "id": "d1-2",
+          "time": "14:30",
+          "type": "flight",
+          "text": "抵达海拉尔东山国际机场，包车师傅接机",
+          "placeId": "hld-airport"
+        },
+        {
+          "id": "d1-3",
+          "time": "15:15",
+          "type": "check-in",
+          "text": "入住 海拉尔艾瑞锦华酒店（家庭房 1.8m＋1.2m）",
+          "placeId": "hailar"
+        },
+        {
+          "id": "d1-4",
+          "time": "15:30",
+          "type": "attraction",
+          "text": "二选一：呼伦贝尔民族博物院 / 世界反法西斯战争海拉尔纪念园（地下要塞，体感更强）。另一个留到 D10 上午",
+          "placeId": "antifascist"
+        },
+        {
+          "id": "d1-5",
+          "time": "17:00",
+          "type": "walk",
+          "text": "伊敏河、成吉思汗广场散步；日落 17:49",
+          "placeId": "yimin-river"
+        },
+        {
+          "id": "d1-6",
+          "time": "18:00",
+          "type": "restaurant",
+          "text": "晚餐：锅茶、手把肉、羊肉烧麦。首晚不饮酒过量"
+        },
+        {
+          "id": "d1-7",
+          "time": "19:30",
+          "type": "note",
+          "text": "★ 全程唯一的大城市补给窗口：暖宝宝 20 片以上、保温杯、干袜、润唇膏、常用药、现金、防滑鞋套。下一次要等到 10/5 晚",
+          "placeId": "hulunbuir-old"
+        },
+        {
+          "id": "d1-8",
+          "time": "21:00",
+          "type": "rest",
+          "text": "满月 99%，今晚不安排星空，早睡"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-09-28",
+      "title": "草原转湿地 · 敖鲁古雅驯鹿",
+      "locations": [
+        "海拉尔",
+        "额尔古纳",
+        "根河"
+      ],
+      "schedule": [
+        {
+          "id": "d2-1",
+          "time": "06:30",
+          "type": "note",
+          "text": "早餐"
+        },
+        {
+          "id": "d2-2",
+          "time": "07:15",
+          "type": "drive",
+          "text": "出发（比常规提前约 1 小时，换取白桦林与更从容的湿地）"
+        },
+        {
+          "id": "d2-3",
+          "time": "09:20",
+          "type": "attraction",
+          "text": "根河湿地景区 2 小时，登观景台；上午顺光",
+          "placeId": "erguna-wet"
+        },
+        {
+          "id": "d2-4",
+          "time": "11:30",
+          "type": "restaurant",
+          "text": "额尔古纳午餐；铁山冷饮羊奶冰淇淋顺路 10 分钟",
+          "placeId": "erguna-town"
+        },
+        {
+          "id": "d2-5",
+          "time": "12:45",
+          "type": "attraction",
+          "text": "★ 白桦林景区（G332 边），秋色正当时",
+          "placeId": "birch-forest"
+        },
+        {
+          "id": "d2-6",
+          "time": "15:00",
+          "type": "attraction",
+          "text": "敖鲁古雅使鹿部落：喂驯鹿、桦树皮画",
+          "placeId": "aoluguya"
+        },
+        {
+          "id": "d2-7",
+          "time": "17:15",
+          "type": "walk",
+          "text": "★ 根河「中国冷极」地标散步",
+          "placeId": "genhe"
+        },
+        {
+          "id": "d2-8",
+          "time": "17:40",
+          "type": "check-in",
+          "text": "入住 根河西乌乞亚撮罗子酒店（家庭房 1.8m＋1.2m）",
+          "placeId": "genhe"
+        },
+        {
+          "id": "d2-9",
+          "time": "18:30",
+          "type": "restaurant",
+          "text": "晚餐：冷水鱼、山菌炖鸡、蓝莓制品"
+        },
+        {
+          "id": "d2-10",
+          "time": "19:00",
+          "type": "note",
+          "text": "★ 撮罗子酒店的鄂温克文化体验／篝火（需向供应商确认是否含在套餐内）"
+        },
+        {
+          "id": "d2-11",
+          "time": "21:00",
+          "type": "rest",
+          "text": "月照 96%，无星空。建议今晚完全不安排、早睡，次日要早起"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-09-29",
+      "title": "林海小火车 · 界河与临江日落",
+      "locations": [
+        "根河",
+        "莫尔道嘎",
+        "室韦",
+        "临江屯"
+      ],
+      "schedule": [
+        {
+          "id": "d3-1",
+          "time": "05:40",
+          "type": "attraction",
+          "text": "★ 林区晨雾：根河湿地或河边；日出 05:56",
+          "placeId": "genhe"
+        },
+        {
+          "id": "d3-2",
+          "time": "07:30",
+          "type": "drive",
+          "text": "出发前往莫尔道嘎"
+        },
+        {
+          "id": "d3-3",
+          "time": "09:45",
+          "type": "attraction",
+          "text": "莫尔道嘎国家森林公园森林小火车（运行 1 小时 40 分＋排队）。取当日首班或次班",
+          "placeId": "moerdaoga-np"
+        },
+        {
+          "id": "d3-4",
+          "time": "12:15",
+          "type": "restaurant",
+          "text": "莫尔道嘎镇午餐：东北铁锅炖"
+        },
+        {
+          "id": "d3-5",
+          "time": "13:00",
+          "type": "attraction",
+          "text": "★ 龙山公园，登高看林海",
+          "placeId": "longshan"
+        },
+        {
+          "id": "d3-6",
+          "time": "14:00",
+          "type": "attraction",
+          "text": "★ 老鹰嘴河湾短停（太平屯需绕行，请司机说明哪个不绕路）",
+          "placeId": "laoyingzui"
+        },
+        {
+          "id": "d3-7",
+          "time": "15:30",
+          "type": "attraction",
+          "text": "室韦界河游船（视风力，40–60 分钟）",
+          "placeId": "shiwei"
+        },
+        {
+          "id": "d3-8",
+          "time": "16:40",
+          "type": "walk",
+          "text": "室韦中俄友谊桥、口岸观景、木刻楞村落",
+          "placeId": "shiwei"
+        },
+        {
+          "id": "d3-9",
+          "time": "17:10",
+          "type": "attraction",
+          "text": "★★ 临江屯日落：往返约 20 公里，额尔古纳河湾与木屋炊烟，是这一带最好的机位；日落 17:43",
+          "placeId": "linjiang"
+        },
+        {
+          "id": "d3-10",
+          "time": "18:30",
+          "type": "check-in",
+          "text": "返回室韦，入住 室韦蓝湖酒店（家庭房 1.8m＋1.2m）",
+          "placeId": "shiwei"
+        },
+        {
+          "id": "d3-11",
+          "time": "19:00",
+          "type": "restaurant",
+          "text": "晚餐：红菜汤、土豆炖牛肉、列巴配蓝莓酱"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-09-30",
+      "title": "临江日出 · 边防卡线慢走",
+      "locations": [
+        "临江屯",
+        "室韦",
+        "恩和"
+      ],
+      "schedule": [
+        {
+          "id": "d4-1",
+          "time": "05:00",
+          "type": "drive",
+          "text": "★★★ 司机 05:00 出车（必须提前写进包车确认单，否则当天叫不到车）"
+        },
+        {
+          "id": "d4-2",
+          "time": "05:20",
+          "type": "attraction",
+          "text": "★★★ 临江屯日出与额尔古纳河谷晨雾；日出 05:58",
+          "placeId": "linjiang"
+        },
+        {
+          "id": "d4-3",
+          "time": "07:30",
+          "type": "note",
+          "text": "回室韦早餐"
+        },
+        {
+          "id": "d4-4",
+          "time": "08:30",
+          "type": "walk",
+          "text": "室韦村内木刻楞、界河栈道步行",
+          "placeId": "shiwei"
+        },
+        {
+          "id": "d4-5",
+          "time": "09:00",
+          "type": "drive",
+          "text": "★ 把边防卡线当景点走，不当赶路：按 5–6 个短停设计（制高点、界河弯道、田野、牧场）。若卡线封闭改走 S201，省下的约 1.5 小时全部追加到哈乌尔河与恩和"
+        },
+        {
+          "id": "d4-6",
+          "time": "13:00",
+          "type": "restaurant",
+          "text": "恩和午餐",
+          "placeId": "enhe"
+        },
+        {
+          "id": "d4-7",
+          "time": "14:00",
+          "type": "attraction",
+          "text": "★★ 哈乌尔河景区：木栈道登高看河曲与白桦林（需确认是否另购门票）",
+          "placeId": "hawuer"
+        },
+        {
+          "id": "d4-8",
+          "time": "15:45",
+          "type": "restaurant",
+          "text": "俄式下午茶：列巴、格瓦斯、蓝莓酱",
+          "placeId": "enhe"
+        },
+        {
+          "id": "d4-9",
+          "time": "16:45",
+          "type": "walk",
+          "text": "★ 村外白桦林与田野，合规区域航拍加黄昏散步；日落 17:41。边防卡线不承诺航拍"
+        },
+        {
+          "id": "d4-10",
+          "time": "17:40",
+          "type": "check-in",
+          "text": "入住 恩和古纳洲海花园酒店（双床 1.5m×2）",
+          "placeId": "enhe"
+        },
+        {
+          "id": "d4-11",
+          "time": "18:30",
+          "type": "restaurant",
+          "text": "俄式晚餐：罐焖牛肉"
+        },
+        {
+          "id": "d4-12",
+          "time": "19:30",
+          "type": "note",
+          "text": "★ 俄罗斯族家庭做客（需供应商提前预约，不要现场找）"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-10-01",
+      "title": "卡线南段 · 滑草与黑山头日落",
+      "locations": [
+        "恩和",
+        "乌兰山",
+        "黑山头"
+      ],
+      "schedule": [
+        {
+          "id": "d5-1",
+          "time": "05:40",
+          "type": "attraction",
+          "text": "★ 恩和晨雾：哈乌尔河或村口白桦林；日出 06:00",
+          "placeId": "enhe"
+        },
+        {
+          "id": "d5-2",
+          "time": "08:00",
+          "type": "note",
+          "text": "列巴 DIY。建议前一晚预约「只做整形与烘烤」环节，压到 45 分钟，不要在发酵上耗掉 1 小时"
+        },
+        {
+          "id": "d5-3",
+          "time": "09:00",
+          "type": "drive",
+          "text": "卡线南段：乌兰山、太极湾，含 2–3 处短停",
+          "placeId": "taijiwan"
+        },
+        {
+          "id": "d5-4",
+          "time": "11:30",
+          "type": "attraction",
+          "text": "乌兰山滑草 45–60 分钟（已确认保留项目）",
+          "placeId": "taijiwan"
+        },
+        {
+          "id": "d5-5",
+          "time": "12:30",
+          "type": "restaurant",
+          "text": "黑山头方向午餐"
+        },
+        {
+          "id": "d5-6",
+          "time": "14:00",
+          "type": "attraction",
+          "text": "黑山头骑马 1–1.5 小时：正规马场、教练陪同、有保险",
+          "placeId": "heishantou"
+        },
+        {
+          "id": "d5-7",
+          "time": "15:30",
+          "type": "attraction",
+          "text": "★ 黑山头古城遗址（辽金土城墙）或额尔古纳河湿地栈道",
+          "placeId": "heishantou"
+        },
+        {
+          "id": "d5-8",
+          "time": "16:50",
+          "type": "attraction",
+          "text": "★ 日落山看日落，必须提前 45 分钟到位；日落 17:40",
+          "placeId": "heishantou-sun"
+        },
+        {
+          "id": "d5-9",
+          "time": "18:00",
+          "type": "check-in",
+          "text": "入住 黑山头神飞庄园（亲子房 1.5m＋1.2m）",
+          "placeId": "heishantou"
+        },
+        {
+          "id": "d5-10",
+          "time": "18:30",
+          "type": "restaurant",
+          "text": "晚餐：烤羊排、奶豆腐、蒙古馅饼"
+        },
+        {
+          "id": "d5-11",
+          "time": "19:00",
+          "type": "note",
+          "text": "★ 暗窗只有 25 分钟（月 19:24 升起）。银河核心在西南低空，值得出去站 20 分钟，但不值得专门等"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-10-02",
+      "title": "云朵牧场 · 莫日格勒河北岸穿越 · 营地星空",
+      "locations": [
+        "黑山头",
+        "云朵牧场",
+        "莫日格勒河"
+      ],
+      "schedule": [
+        {
+          "id": "d6-1",
+          "time": "05:40",
+          "type": "attraction",
+          "text": "★ 黑山头额尔古纳河湿地日出与晨雾；日出 06:00",
+          "placeId": "heishantou"
+        },
+        {
+          "id": "d6-2",
+          "time": "08:30",
+          "type": "attraction",
+          "text": "云朵牧场：喂小羊、油桶小火车（已确认保留，总停留 1.5–2 小时）",
+          "placeId": "yunduo-ranch"
+        },
+        {
+          "id": "d6-3",
+          "time": "10:30",
+          "type": "note",
+          "text": "羊毛毡 DIY"
+        },
+        {
+          "id": "d6-4",
+          "time": "12:30",
+          "type": "drive",
+          "text": "★ 莫日格勒河北岸穿越：明确安排 3 处停车（河曲制高点、牛羊群、无人草原），否则整段会变成纯颠簸",
+          "placeId": "morigele"
+        },
+        {
+          "id": "d6-5",
+          "time": "15:30",
+          "type": "check-in",
+          "text": "抵达 图嘎营地野奢蒙古包（家庭蒙古包 1.8m＋1.2m）",
+          "placeId": "morigele"
+        },
+        {
+          "id": "d6-6",
+          "time": "15:40",
+          "type": "hike",
+          "text": "★ 营地周边草原徒步 1–1.5 小时，绕河湾一圈"
+        },
+        {
+          "id": "d6-7",
+          "time": "17:00",
+          "type": "attraction",
+          "text": "★ 营地日落与蓝调时刻；日落 17:36"
+        },
+        {
+          "id": "d6-8",
+          "time": "18:30",
+          "type": "restaurant",
+          "text": "营地蒙餐、手把肉、奶茶（提前点单，确认晚餐与热水）"
+        },
+        {
+          "id": "d6-9",
+          "time": "19:00",
+          "type": "note",
+          "text": "★★★ 全程最佳星空之一：暗窗 2 小时 15 分（18:08–20:22 月出前），草原零光污染，月照 62%，银河核心约 20:30 沉入西南。夜间近 0℃、草原风大，需羽绒＋手套＋头灯"
+        },
+        {
+          "id": "d6-10",
+          "time": "21:00",
+          "type": "rest",
+          "text": "早睡，次日是全程最长转场"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-10-03",
+      "title": "最长转场 · 樟子松林 · 景区星空",
+      "locations": [
+        "图嘎营地",
+        "海拉尔",
+        "红花尔基",
+        "阿尔山"
+      ],
+      "schedule": [
+        {
+          "id": "d7-1",
+          "time": "05:30",
+          "type": "attraction",
+          "text": "★★ 营地日出与草原晨雾；日出 06:00。这天本来就要早起，等于白拿"
+        },
+        {
+          "id": "d7-2",
+          "time": "07:30",
+          "type": "drive",
+          "text": "出发，比原计划更早，为 430–480 公里长途留余量"
+        },
+        {
+          "id": "d7-3",
+          "time": "09:00",
+          "type": "note",
+          "text": "海拉尔补给短停：加油、卫生间、热食",
+          "placeId": "hailar"
+        },
+        {
+          "id": "d7-4",
+          "time": "11:30",
+          "type": "attraction",
+          "text": "★★ 红花尔基樟子松国家森林公园：木栈道与观景台，即行程表所写「沿途樟子松林」",
+          "placeId": "honghuaerji"
+        },
+        {
+          "id": "d7-5",
+          "time": "12:30",
+          "type": "restaurant",
+          "text": "红花尔基／伊敏午餐。原方案写「海拉尔提前吃正餐」，但那样上午要白坐 1 小时车；前提是司机确认该路段有可用餐点，否则维持原方案、把樟子松林调到 13:00–14:00"
+        },
+        {
+          "id": "d7-6",
+          "time": "13:30",
+          "type": "drive",
+          "text": "前往阿尔山，途中 2 处 15–20 分钟短停（伊敏河谷、草原林区过渡带）"
+        },
+        {
+          "id": "d7-7",
+          "time": "17:00",
+          "type": "attraction",
+          "text": "蓝房子只在光线好时停 15 分钟。不冻河当天不停，改到 D8 清晨",
+          "placeId": "lanfangzi"
+        },
+        {
+          "id": "d7-8",
+          "time": "18:30",
+          "type": "check-in",
+          "text": "抵达 阿尔山渔家乐民宿（景区内／服务区，豪华双床 1.5m×2）",
+          "placeId": "arxan-np"
+        },
+        {
+          "id": "d7-9",
+          "time": "18:45",
+          "type": "restaurant",
+          "text": "清淡晚餐，不安排重口夜宵"
+        },
+        {
+          "id": "d7-10",
+          "time": "19:30",
+          "type": "note",
+          "text": "★★★ 全程最佳星空夜：景区内零光污染，暗窗 3 小时 40 分（18:03–21:43），月照 51%。再累也建议出门站 20 分钟"
+        },
+        {
+          "id": "d7-11",
+          "time": "21:30",
+          "type": "rest",
+          "text": "早睡，次日全天徒步"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-10-04",
+      "title": "阿尔山国家森林公园全天",
+      "locations": [
+        "阿尔山国家森林公园",
+        "阿尔山市区"
+      ],
+      "schedule": [
+        {
+          "id": "d8-1",
+          "time": "06:00",
+          "type": "note",
+          "text": "早餐（前一晚请酒店备好）"
+        },
+        {
+          "id": "d8-2",
+          "time": "06:30",
+          "type": "drive",
+          "text": "★ 住景区内的最大红利：比住市区的游客早 1.5–2 小时进核心景点。10/4 是国庆第四天，园内客流仍大"
+        },
+        {
+          "id": "d8-3",
+          "time": "06:40",
+          "type": "attraction",
+          "text": "★★ 不冻河晨雾：日出后 1 小时内是唯一正确的时间窗",
+          "placeId": "budonghe"
+        },
+        {
+          "id": "d8-4",
+          "time": "07:30",
+          "type": "hike",
+          "text": "驼峰岭天池：台阶较多，1.5–2 小时；上午光线好、人少",
+          "placeId": "tuofengling"
+        },
+        {
+          "id": "d8-5",
+          "time": "10:00",
+          "type": "hike",
+          "text": "阿尔山大峡谷栈道",
+          "placeId": "daxiagu"
+        },
+        {
+          "id": "d8-6",
+          "time": "11:30",
+          "type": "restaurant",
+          "text": "景区午餐：热汤面、铁锅炖、菌菇。自备保温杯与能量补给"
+        },
+        {
+          "id": "d8-7",
+          "time": "12:30",
+          "type": "hike",
+          "text": "石塘林火山熔岩栈道",
+          "placeId": "shitanglin"
+        },
+        {
+          "id": "d8-8",
+          "time": "14:15",
+          "type": "attraction",
+          "text": "杜鹃湖",
+          "placeId": "dujuanhu"
+        },
+        {
+          "id": "d8-9",
+          "time": "15:45",
+          "type": "attraction",
+          "text": "三潭峡（体力允许才去，否则跳过）",
+          "placeId": "santanxia"
+        },
+        {
+          "id": "d8-10",
+          "time": "16:30",
+          "type": "drive",
+          "text": "出园返回市区"
+        },
+        {
+          "id": "d8-11",
+          "time": "17:30",
+          "type": "check-in",
+          "text": "入住 阿尔山成悦酒店（市区，豪华家庭房 1.5m×2）",
+          "placeId": "arxan-city"
+        },
+        {
+          "id": "d8-12",
+          "time": "18:00",
+          "type": "restaurant",
+          "text": "晚餐：铁锅炖／冰煮羊"
+        },
+        {
+          "id": "d8-13",
+          "time": "19:30",
+          "type": "note",
+          "text": "★★ 温泉恢复（确认成悦是否含泡池，否则单订市区温泉）。这是全程最需要恢复的一晚"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "date": "2026-10-05",
+      "title": "阿尔山小城慢逛 · 返回海拉尔",
+      "locations": [
+        "阿尔山市区",
+        "海拉尔"
+      ],
+      "schedule": [
+        {
+          "id": "d9-1",
+          "time": "06:30",
+          "type": "attraction",
+          "text": "★ 五里泉（市区北约 5 公里）与晨间安静街道",
+          "placeId": "wuliquan"
+        },
+        {
+          "id": "d9-2",
+          "time": "08:00",
+          "type": "note",
+          "text": "早餐"
+        },
+        {
+          "id": "d9-3",
+          "time": "08:30",
+          "type": "attraction",
+          "text": "★★ 阿尔山火车站：1937 年日式木构、全国重点文保。清晨无人、侧逆光，是拍它的最佳时段，比午后强很多",
+          "placeId": "arxan-station"
+        },
+        {
+          "id": "d9-4",
+          "time": "09:30",
+          "type": "walk",
+          "text": "百年老街、特色建筑街区、咖啡",
+          "placeId": "arxan-city"
+        },
+        {
+          "id": "d9-5",
+          "time": "11:00",
+          "type": "restaurant",
+          "text": "本地午餐：冷水鱼、山野菜、菌菇；顺带山货采购"
+        },
+        {
+          "id": "d9-6",
+          "time": "13:00",
+          "type": "drive",
+          "text": "出发前往海拉尔（310–350 公里）。请司机明确回答玫瑰峰是否在返程路线上，顺路的话 30–40 分钟短停很值。道路可能有暗冰，如有降雪提前出发"
+        },
+        {
+          "id": "d9-7",
+          "time": "18:00",
+          "type": "check-in",
+          "text": "抵达海拉尔自订酒店（优先含早餐、可延迟退房、能协助送机）",
+          "placeId": "hailar"
+        },
+        {
+          "id": "d9-8",
+          "time": "19:00",
+          "type": "restaurant",
+          "text": "晚餐：涮羊肉、烤羊排或锅茶"
+        },
+        {
+          "id": "d9-9",
+          "time": "20:30",
+          "type": "note",
+          "text": "★ 最后补给与伴手礼窗口：牛肉干、奶制品、蓝莓、酒。次日春秋航空 9C6540 行李额偏紧，如已超重，今晚在海拉尔发快递回深圳",
+          "placeId": "hulunbuir-old"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date": "2026-10-06",
+      "title": "返程 · 经通辽与石家庄回深圳",
+      "locations": [
+        "海拉尔",
+        "通辽",
+        "石家庄",
+        "深圳"
+      ],
+      "schedule": [
+        {
+          "id": "d10-1",
+          "time": "07:30",
+          "type": "note",
+          "text": "慢早餐、收拾行李"
+        },
+        {
+          "id": "d10-2",
+          "time": "08:30",
+          "type": "attraction",
+          "text": "★ 上午有近 3 小时可用，选 D1 没做的那个：反法西斯纪念园（1.5–2 小时，方向靠近机场）／呼伦贝尔民族博物院（1.5 小时）／海拉尔国家森林公园（1 小时，最轻量）。10/6 为周二，不涉及周一闭馆",
+          "placeId": "antifascist"
+        },
+        {
+          "id": "d10-3",
+          "time": "11:00",
+          "type": "restaurant",
+          "text": "海拉尔最后一顿正餐"
+        },
+        {
+          "id": "d10-4",
+          "time": "12:15",
+          "type": "check-out",
+          "text": "退房出发前往机场",
+          "placeId": "hailar"
+        },
+        {
+          "id": "d10-5",
+          "time": "13:00",
+          "type": "transfer",
+          "text": "抵达海拉尔东山国际机场。厚羽绒提前压缩进随身",
+          "placeId": "hld-airport"
+        },
+        {
+          "id": "d10-6",
+          "time": "14:55",
+          "type": "flight",
+          "text": "天骄航空 9D5666 海拉尔 → 通辽（16:15 抵达）"
+        },
+        {
+          "id": "d10-7",
+          "time": "19:20",
+          "type": "flight",
+          "text": "春秋航空 9C6540 通辽 → 石家庄（20:55）→ 深圳。通辽衔接 3 小时 05 分；不能直挂就按取行李→重新值机执行；石家庄经停是否下机以现场为准"
+        },
+        {
+          "id": "d10-8",
+          "time": "25:00",
+          "type": "flight",
+          "text": "10 月 7 日 01:00 抵达深圳宝安"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "hailar",
+      "name": "海拉尔",
+      "nameZh": "海拉尔"
+    },
+    {
+      "id": "hld-airport",
+      "name": "海拉尔东山国际机场",
+      "nameZh": "海拉尔东山国际机场"
+    },
+    {
+      "id": "yimin-river",
+      "name": "伊敏河·成吉思汗广场",
+      "nameZh": "伊敏河·成吉思汗广场"
+    },
+    {
+      "id": "hulunbuir-old",
+      "name": "呼伦贝尔古城",
+      "nameZh": "呼伦贝尔古城"
+    },
+    {
+      "id": "antifascist",
+      "name": "世界反法西斯战争海拉尔纪念园",
+      "nameZh": "世界反法西斯战争海拉尔纪念园"
+    },
+    {
+      "id": "erguna-wet",
+      "name": "额尔古纳·根河湿地景区",
+      "nameZh": "额尔古纳·根河湿地景区"
+    },
+    {
+      "id": "erguna-town",
+      "name": "额尔古纳市区",
+      "nameZh": "额尔古纳市区"
+    },
+    {
+      "id": "birch-forest",
+      "name": "白桦林景区",
+      "nameZh": "白桦林景区"
+    },
+    {
+      "id": "aoluguya",
+      "name": "敖鲁古雅使鹿部落",
+      "nameZh": "敖鲁古雅使鹿部落"
+    },
+    {
+      "id": "genhe",
+      "name": "根河",
+      "nameZh": "根河"
+    },
+    {
+      "id": "moerdaoga-np",
+      "name": "莫尔道嘎国家森林公园",
+      "nameZh": "莫尔道嘎国家森林公园"
+    },
+    {
+      "id": "longshan",
+      "name": "龙山公园",
+      "nameZh": "龙山公园"
+    },
+    {
+      "id": "laoyingzui",
+      "name": "老鹰嘴",
+      "nameZh": "老鹰嘴"
+    },
+    {
+      "id": "shiwei",
+      "name": "室韦",
+      "nameZh": "室韦"
+    },
+    {
+      "id": "linjiang",
+      "name": "临江屯",
+      "nameZh": "临江屯"
+    },
+    {
+      "id": "enhe",
+      "name": "恩和俄罗斯民族乡",
+      "nameZh": "恩和俄罗斯民族乡"
+    },
+    {
+      "id": "hawuer",
+      "name": "哈乌尔河景区",
+      "nameZh": "哈乌尔河景区"
+    },
+    {
+      "id": "taijiwan",
+      "name": "乌兰山·太极湾",
+      "nameZh": "乌兰山·太极湾"
+    },
+    {
+      "id": "heishantou",
+      "name": "黑山头",
+      "nameZh": "黑山头"
+    },
+    {
+      "id": "heishantou-sun",
+      "name": "黑山头日落山",
+      "nameZh": "黑山头日落山"
+    },
+    {
+      "id": "yunduo-ranch",
+      "name": "云朵牧场",
+      "nameZh": "云朵牧场"
+    },
+    {
+      "id": "morigele",
+      "name": "莫日格勒河北岸·图嘎营地",
+      "nameZh": "莫日格勒河北岸·图嘎营地"
+    },
+    {
+      "id": "honghuaerji",
+      "name": "红花尔基樟子松国家森林公园",
+      "nameZh": "红花尔基樟子松国家森林公园"
+    },
+    {
+      "id": "lanfangzi",
+      "name": "蓝房子",
+      "nameZh": "蓝房子"
+    },
+    {
+      "id": "arxan-city",
+      "name": "阿尔山市区",
+      "nameZh": "阿尔山市区"
+    },
+    {
+      "id": "arxan-station",
+      "name": "阿尔山火车站",
+      "nameZh": "阿尔山火车站"
+    },
+    {
+      "id": "wuliquan",
+      "name": "五里泉",
+      "nameZh": "五里泉"
+    },
+    {
+      "id": "budonghe",
+      "name": "不冻河",
+      "nameZh": "不冻河"
+    },
+    {
+      "id": "tuofengling",
+      "name": "驼峰岭天池",
+      "nameZh": "驼峰岭天池"
+    },
+    {
+      "id": "daxiagu",
+      "name": "阿尔山大峡谷",
+      "nameZh": "阿尔山大峡谷"
+    },
+    {
+      "id": "shitanglin",
+      "name": "石塘林",
+      "nameZh": "石塘林"
+    },
+    {
+      "id": "dujuanhu",
+      "name": "杜鹃湖",
+      "nameZh": "杜鹃湖"
+    },
+    {
+      "id": "santanxia",
+      "name": "三潭峡",
+      "nameZh": "三潭峡"
+    },
+    {
+      "id": "arxan-np",
+      "name": "阿尔山国家森林公园",
+      "nameZh": "阿尔山国家森林公园"
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": [
+      {
+        "id": "tk-1",
+        "day": 3,
+        "name": "莫尔道嘎国家森林公园门票＋森林小火车",
+        "requirement": "运行约 1 小时 40 分，需另计排队；取当日首班或次班。需向包车方确认是否含价",
+        "status": "pending"
+      },
+      {
+        "id": "tk-2",
+        "day": 3,
+        "name": "室韦界河游船",
+        "requirement": "以 9 月底实际运营及风浪为准；需确认是否含价",
+        "status": "pending"
+      },
+      {
+        "id": "tk-3",
+        "day": 4,
+        "name": "哈乌尔河景区门票",
+        "requirement": "需确认是否另购门票、是否已含在包车报价内",
+        "status": "pending"
+      },
+      {
+        "id": "tk-4",
+        "day": 5,
+        "name": "乌兰山滑草",
+        "requirement": "已确认保留，45–60 分钟。需写入供应商确认单，注明天气或停运时的退费／替代规则",
+        "status": "confirmed"
+      },
+      {
+        "id": "tk-5",
+        "day": 5,
+        "name": "黑山头骑马",
+        "requirement": "1–1.5 小时，正规马场、教练陪同、有保险。需确认是否含价",
+        "status": "pending"
+      },
+      {
+        "id": "tk-6",
+        "day": 6,
+        "name": "云朵牧场（喂小羊＋油桶小火车）",
+        "requirement": "已确认保留，总停留 1.5–2 小时",
+        "status": "confirmed"
+      },
+      {
+        "id": "tk-7",
+        "day": 8,
+        "name": "阿尔山国家森林公园门票＋景区交通",
+        "requirement": "全天游园，景交 3–4 小时。需确认景交能否在 06:40 前送达不冻河",
+        "status": "pending"
+      }
+    ]
+  },
+  "preTrip": {
+    "packingItems": [
+      {
+        "id": "todo-1",
+        "text": "保暖长袖 2–3 件、抓绒 1 件、轻薄羽绒 1 件、厚羽绒 1 件、防风防水外壳 1 件",
+        "completed": false
+      },
+      {
+        "id": "todo-2",
+        "text": "保暖打底裤 2 条、防风长裤",
+        "completed": false
+      },
+      {
+        "id": "todo-3",
+        "text": "防水防滑徒步鞋、备用运动鞋、厚袜、毛线帽、手套、脖套、墨镜",
+        "completed": false
+      },
+      {
+        "id": "todo-4",
+        "text": "暖宝宝（20 片以上，海拉尔当晚采购）",
+        "completed": false
+      },
+      {
+        "id": "todo-5",
+        "text": "保温杯、能量棒、巧克力、充电宝、车载线、折叠雨具",
+        "completed": false
+      },
+      {
+        "id": "todo-6",
+        "text": "润唇膏、防晒霜、纸巾湿巾",
+        "completed": false
+      },
+      {
+        "id": "todo-7",
+        "text": "身份证、航班订单、保险、少量现金（后段村镇取款不便）",
+        "completed": false
+      },
+      {
+        "id": "todo-8",
+        "text": "晕车药、肠胃药、感冒药、止痛药；个人处方药多备 2 天",
+        "completed": false
+      },
+      {
+        "id": "todo-9",
+        "text": "三人共享订单与紧急联系人",
+        "completed": false
+      },
+      {
+        "id": "todo-10",
+        "text": "星空拍摄：三脚架＋头灯（只为 10/2 图嘎营地与 10/3 阿尔山景区两晚准备）",
+        "completed": false
+      },
+      {
+        "id": "todo-11",
+        "text": "10/3 起厚羽绒放在车内随手可取，不压在大行李底部",
+        "completed": false
+      },
+      {
+        "id": "todo-12",
+        "text": "骑马不戴长围巾；阿尔山避免露脚踝，随身备干袜",
+        "completed": false
+      },
+      {
+        "id": "todo-13",
+        "text": "让供应商书面确认 10/3 车辆直接送到阿尔山景区内／服务区的渔家乐，及 10/4 游园后送到市区成悦酒店",
+        "completed": false
+      },
+      {
+        "id": "todo-14",
+        "text": "确认 10/5 13:00–13:30 从阿尔山市区出发并送到海拉尔自订酒店；如有降雪或暗冰提前出发",
+        "completed": false
+      },
+      {
+        "id": "todo-15",
+        "text": "向出票平台确认 9D5666 与 9C6540 是否联程保护、行李是否直挂；如需重新托运，保存两个航司的值机凭证",
+        "completed": false
+      },
+      {
+        "id": "todo-16",
+        "text": "确认 9C6540 在石家庄经停时是否需要下机、是否需要重新安检",
+        "completed": false
+      },
+      {
+        "id": "todo-17",
+        "text": "滑草和油桶小火车写入供应商确认单；游船、骑马、手作、航拍分别确认是否含价",
+        "completed": false
+      },
+      {
+        "id": "todo-18",
+        "text": "逐家确认 3 位成人入住、第三人早餐与被褥、供暖、独立卫浴和 24 小时热水",
+        "completed": false
+      },
+      {
+        "id": "todo-19",
+        "text": "每日出车时间调整为 07:15–07:30；D4 需 05:00 出车、D7 需 07:30 出车、D8 需 06:30 出车",
+        "completed": false
+      },
+      {
+        "id": "todo-20",
+        "text": "D3 傍晚室韦至临江屯往返约 20 公里；确认老鹰嘴与太平屯哪一个不需绕路",
+        "completed": false
+      },
+      {
+        "id": "todo-21",
+        "text": "D4 哈乌尔河景区是否另购门票；恩和俄罗斯族家庭做客提前预约",
+        "completed": false
+      },
+      {
+        "id": "todo-22",
+        "text": "D7 红花尔基樟子松林停留 1 小时；确认该路段中午有无可用餐点",
+        "completed": false
+      },
+      {
+        "id": "todo-23",
+        "text": "D8 不冻河的准确位置，以及景交能否在 06:40 前送达；成悦酒店是否含温泉泡池",
+        "completed": false
+      },
+      {
+        "id": "todo-24",
+        "text": "D9 玫瑰峰是否在阿尔山至海拉尔的返程路线上",
+        "completed": false
+      },
+      {
+        "id": "todo-25",
+        "text": "早出晚归对应的司机连续驾驶上限与加班口径（重点是 D4 的 05:00 出车和 D7 的长转场）",
+        "completed": false
+      },
+      {
+        "id": "todo-26",
+        "text": "出发前 10 天查看天气趋势，前 72 小时按降雪、风力和道路情况调整短停顺序",
+        "completed": false
+      }
+    ],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": ""
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [
+    {
+      "id": "iss-1",
+      "title": "10/5 海拉尔住宿未定",
+      "impact": "住宿",
+      "status": "open",
+      "note": "按待补充显示，未虚构酒店"
+    },
+    {
+      "id": "iss-2",
+      "title": "9D5666 与 9C6540 行李是否直挂未确认",
+      "impact": "航班",
+      "status": "open",
+      "note": "不能直挂时按取行李→重新值机执行"
+    },
+    {
+      "id": "iss-3",
+      "title": "玫瑰峰是否在 D9 返程路线上",
+      "impact": "每日行程",
+      "status": "open",
+      "note": "待包车方确认；顺路则加 30–40 分钟短停"
+    },
+    {
+      "id": "iss-4",
+      "title": "不冻河准确位置与景交首班时间",
+      "impact": "每日行程",
+      "status": "open",
+      "note": "影响 D8 06:40 的晨雾窗口"
+    }
+  ],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "places": [
+      {
+        "id": "hailar",
+        "name": "海拉尔",
+        "nameZh": "海拉尔",
+        "geo": {
+          "lat": 49.2122,
+          "lng": 119.7361
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "海拉尔 呼伦贝尔"
+      },
+      {
+        "id": "hld-airport",
+        "name": "海拉尔东山国际机场",
+        "nameZh": "海拉尔东山国际机场",
+        "geo": {
+          "lat": 49.205,
+          "lng": 119.825
+        },
+        "countryCode": "CN",
+        "query": "海拉尔东山国际机场"
+      },
+      {
+        "id": "yimin-river",
+        "name": "伊敏河·成吉思汗广场",
+        "nameZh": "伊敏河·成吉思汗广场",
+        "geo": {
+          "lat": 49.21,
+          "lng": 119.74
+        },
+        "countryCode": "CN",
+        "query": "成吉思汗广场 海拉尔"
+      },
+      {
+        "id": "hulunbuir-old",
+        "name": "呼伦贝尔古城",
+        "nameZh": "呼伦贝尔古城",
+        "geo": {
+          "lat": 49.216,
+          "lng": 119.728
+        },
+        "countryCode": "CN",
+        "query": "呼伦贝尔古城 海拉尔"
+      },
+      {
+        "id": "antifascist",
+        "name": "世界反法西斯战争海拉尔纪念园",
+        "nameZh": "世界反法西斯战争海拉尔纪念园",
+        "geo": {
+          "lat": 49.228,
+          "lng": 119.7
+        },
+        "countryCode": "CN",
+        "query": "世界反法西斯战争海拉尔纪念园"
+      },
+      {
+        "id": "erguna-wet",
+        "name": "额尔古纳·根河湿地景区",
+        "nameZh": "额尔古纳·根河湿地景区",
+        "geo": {
+          "lat": 50.26,
+          "lng": 120.14
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "根河湿地景区 额尔古纳"
+      },
+      {
+        "id": "erguna-town",
+        "name": "额尔古纳市区",
+        "nameZh": "额尔古纳市区",
+        "geo": {
+          "lat": 50.2433,
+          "lng": 120.1839
+        },
+        "countryCode": "CN",
+        "query": "额尔古纳市"
+      },
+      {
+        "id": "birch-forest",
+        "name": "白桦林景区",
+        "nameZh": "白桦林景区",
+        "geo": {
+          "lat": 50.62,
+          "lng": 120.75
+        },
+        "countryCode": "CN",
+        "query": "白桦林景区 额尔古纳"
+      },
+      {
+        "id": "aoluguya",
+        "name": "敖鲁古雅使鹿部落",
+        "nameZh": "敖鲁古雅使鹿部落",
+        "geo": {
+          "lat": 50.78,
+          "lng": 121.47
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "敖鲁古雅使鹿部落景区 根河"
+      },
+      {
+        "id": "genhe",
+        "name": "根河",
+        "nameZh": "根河",
+        "geo": {
+          "lat": 50.78,
+          "lng": 121.52
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "根河市"
+      },
+      {
+        "id": "moerdaoga-np",
+        "name": "莫尔道嘎国家森林公园",
+        "nameZh": "莫尔道嘎国家森林公园",
+        "geo": {
+          "lat": 51.38,
+          "lng": 120.45
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "莫尔道嘎国家森林公园"
+      },
+      {
+        "id": "longshan",
+        "name": "龙山公园",
+        "nameZh": "龙山公园",
+        "geo": {
+          "lat": 51.3,
+          "lng": 120.53
+        },
+        "countryCode": "CN",
+        "query": "龙山公园 莫尔道嘎"
+      },
+      {
+        "id": "laoyingzui",
+        "name": "老鹰嘴",
+        "nameZh": "老鹰嘴",
+        "geo": {
+          "lat": 51.33,
+          "lng": 120.12
+        },
+        "countryCode": "CN",
+        "query": "老鹰嘴 额尔古纳"
+      },
+      {
+        "id": "shiwei",
+        "name": "室韦",
+        "nameZh": "室韦",
+        "geo": {
+          "lat": 51.32,
+          "lng": 119.99
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "室韦俄罗斯族民族乡"
+      },
+      {
+        "id": "linjiang",
+        "name": "临江屯",
+        "nameZh": "临江屯",
+        "geo": {
+          "lat": 51.28,
+          "lng": 120.1
+        },
+        "countryCode": "CN",
+        "query": "临江屯 额尔古纳"
+      },
+      {
+        "id": "enhe",
+        "name": "恩和俄罗斯民族乡",
+        "nameZh": "恩和俄罗斯民族乡",
+        "geo": {
+          "lat": 50.87,
+          "lng": 120.02
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "恩和俄罗斯族民族乡"
+      },
+      {
+        "id": "hawuer",
+        "name": "哈乌尔河景区",
+        "nameZh": "哈乌尔河景区",
+        "geo": {
+          "lat": 50.8,
+          "lng": 120.1
+        },
+        "countryCode": "CN",
+        "query": "哈乌尔河景区 恩和"
+      },
+      {
+        "id": "taijiwan",
+        "name": "乌兰山·太极湾",
+        "nameZh": "乌兰山·太极湾",
+        "geo": {
+          "lat": 50.35,
+          "lng": 119.72
+        },
+        "countryCode": "CN",
+        "query": "太极湾 额尔古纳"
+      },
+      {
+        "id": "heishantou",
+        "name": "黑山头",
+        "nameZh": "黑山头",
+        "geo": {
+          "lat": 50.2,
+          "lng": 119.65
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "黑山头镇 额尔古纳"
+      },
+      {
+        "id": "heishantou-sun",
+        "name": "黑山头日落山",
+        "nameZh": "黑山头日落山",
+        "geo": {
+          "lat": 50.19,
+          "lng": 119.63
+        },
+        "countryCode": "CN",
+        "query": "黑山头日落山"
+      },
+      {
+        "id": "yunduo-ranch",
+        "name": "云朵牧场",
+        "nameZh": "云朵牧场",
+        "geo": {
+          "lat": 49.9,
+          "lng": 119.9
+        },
+        "countryCode": "CN",
+        "query": "云朵牧场 额尔古纳"
+      },
+      {
+        "id": "morigele",
+        "name": "莫日格勒河北岸·图嘎营地",
+        "nameZh": "莫日格勒河北岸·图嘎营地",
+        "geo": {
+          "lat": 49.55,
+          "lng": 120.1
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "莫日格勒河 陈巴尔虎旗"
+      },
+      {
+        "id": "honghuaerji",
+        "name": "红花尔基樟子松国家森林公园",
+        "nameZh": "红花尔基樟子松国家森林公园",
+        "geo": {
+          "lat": 48.19,
+          "lng": 119.91
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "红花尔基樟子松国家森林公园"
+      },
+      {
+        "id": "lanfangzi",
+        "name": "蓝房子",
+        "nameZh": "蓝房子",
+        "geo": {
+          "lat": 47.2,
+          "lng": 120.1
+        },
+        "countryCode": "CN",
+        "query": "蓝房子 阿尔山"
+      },
+      {
+        "id": "arxan-city",
+        "name": "阿尔山市区",
+        "nameZh": "阿尔山市区",
+        "geo": {
+          "lat": 47.17,
+          "lng": 119.94
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "阿尔山市"
+      },
+      {
+        "id": "arxan-station",
+        "name": "阿尔山火车站",
+        "nameZh": "阿尔山火车站",
+        "geo": {
+          "lat": 47.175,
+          "lng": 119.943
+        },
+        "countryCode": "CN",
+        "query": "阿尔山火车站"
+      },
+      {
+        "id": "wuliquan",
+        "name": "五里泉",
+        "nameZh": "五里泉",
+        "geo": {
+          "lat": 47.21,
+          "lng": 119.96
+        },
+        "countryCode": "CN",
+        "query": "五里泉 阿尔山"
+      },
+      {
+        "id": "budonghe",
+        "name": "不冻河",
+        "nameZh": "不冻河",
+        "geo": {
+          "lat": 47.25,
+          "lng": 120.65
+        },
+        "countryCode": "CN",
+        "query": "不冻河 阿尔山"
+      },
+      {
+        "id": "tuofengling",
+        "name": "驼峰岭天池",
+        "nameZh": "驼峰岭天池",
+        "geo": {
+          "lat": 47.47,
+          "lng": 120.83
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "驼峰岭天池 阿尔山"
+      },
+      {
+        "id": "daxiagu",
+        "name": "阿尔山大峡谷",
+        "nameZh": "阿尔山大峡谷",
+        "geo": {
+          "lat": 47.28,
+          "lng": 120.7
+        },
+        "countryCode": "CN",
+        "query": "阿尔山大峡谷"
+      },
+      {
+        "id": "shitanglin",
+        "name": "石塘林",
+        "nameZh": "石塘林",
+        "geo": {
+          "lat": 47.4,
+          "lng": 120.8
+        },
+        "countryCode": "CN",
+        "query": "石塘林 阿尔山"
+      },
+      {
+        "id": "dujuanhu",
+        "name": "杜鹃湖",
+        "nameZh": "杜鹃湖",
+        "geo": {
+          "lat": 47.35,
+          "lng": 120.85
+        },
+        "countryCode": "CN",
+        "query": "杜鹃湖 阿尔山"
+      },
+      {
+        "id": "santanxia",
+        "name": "三潭峡",
+        "nameZh": "三潭峡",
+        "geo": {
+          "lat": 47.2,
+          "lng": 120.6
+        },
+        "countryCode": "CN",
+        "query": "三潭峡 阿尔山"
+      },
+      {
+        "id": "arxan-np",
+        "name": "阿尔山国家森林公园",
+        "nameZh": "阿尔山国家森林公园",
+        "geo": {
+          "lat": 47.3,
+          "lng": 120.75
+        },
+        "countryCode": "CN",
+        "overview": true,
+        "query": "阿尔山国家森林公园"
+      }
+    ],
+    "routes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "hld-airport",
+          "hailar",
+          "yimin-river",
+          "hulunbuir-old"
+        ]
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "hailar",
+          "erguna-wet",
+          "erguna-town",
+          "birch-forest",
+          "aoluguya",
+          "genhe"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "genhe",
+          "moerdaoga-np",
+          "longshan",
+          "laoyingzui",
+          "shiwei",
+          "linjiang"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "linjiang",
+          "shiwei",
+          "hawuer",
+          "enhe"
+        ]
+      },
+      {
+        "day": 5,
+        "placeIds": [
+          "enhe",
+          "taijiwan",
+          "heishantou",
+          "heishantou-sun"
+        ]
+      },
+      {
+        "day": 6,
+        "placeIds": [
+          "heishantou",
+          "yunduo-ranch",
+          "morigele"
+        ]
+      },
+      {
+        "day": 7,
+        "placeIds": [
+          "morigele",
+          "hailar",
+          "honghuaerji",
+          "lanfangzi",
+          "arxan-np"
+        ]
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "arxan-np",
+          "budonghe",
+          "tuofengling",
+          "daxiagu",
+          "shitanglin",
+          "dujuanhu",
+          "santanxia",
+          "arxan-city"
+        ]
+      },
+      {
+        "day": 9,
+        "placeIds": [
+          "arxan-city",
+          "wuliquan",
+          "arxan-station",
+          "hailar"
+        ]
+      },
+      {
+        "day": 10,
+        "placeIds": [
+          "hailar",
+          "hld-airport"
+        ]
+      }
+    ],
+    "dailyRoutes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "hld-airport",
+          "hailar",
+          "yimin-river",
+          "hulunbuir-old"
+        ]
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "hailar",
+          "erguna-wet",
+          "erguna-town",
+          "birch-forest",
+          "aoluguya",
+          "genhe"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "genhe",
+          "moerdaoga-np",
+          "longshan",
+          "laoyingzui",
+          "shiwei",
+          "linjiang"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "linjiang",
+          "shiwei",
+          "hawuer",
+          "enhe"
+        ]
+      },
+      {
+        "day": 5,
+        "placeIds": [
+          "enhe",
+          "taijiwan",
+          "heishantou",
+          "heishantou-sun"
+        ]
+      },
+      {
+        "day": 6,
+        "placeIds": [
+          "heishantou",
+          "yunduo-ranch",
+          "morigele"
+        ]
+      },
+      {
+        "day": 7,
+        "placeIds": [
+          "morigele",
+          "hailar",
+          "honghuaerji",
+          "lanfangzi",
+          "arxan-np"
+        ]
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "arxan-np",
+          "budonghe",
+          "tuofengling",
+          "daxiagu",
+          "shitanglin",
+          "dujuanhu",
+          "santanxia",
+          "arxan-city"
+        ]
+      },
+      {
+        "day": 9,
+        "placeIds": [
+          "arxan-city",
+          "wuliquan",
+          "arxan-station",
+          "hailar"
+        ]
+      },
+      {
+        "day": 10,
+        "placeIds": [
+          "hailar",
+          "hld-airport"
+        ]
+      }
+    ],
+    "region": {
+      "id": "inner-mongolia",
+      "name": "内蒙古",
+      "label": "内蒙古",
+      "title": "呼伦贝尔 × 阿尔山 · 旅行路线",
+      "countryCode": "CN"
+    }
+  },
+  "routeMap": {
+    "defaultRegionId": "inner-mongolia",
+    "regions": [
+      {
+        "id": "inner-mongolia",
+        "label": "内蒙古",
+        "countryCode": "CN",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "upland-basin",
+        "mapModeReason": "dense-place-cluster",
+        "mapModeMetrics": {
+          "placeCount": 34,
+          "geoPlaceCount": 34,
+          "widthKm": 136.87,
+          "heightKm": 467.31,
+          "spanKm": 469.59,
+          "averageNearestKm": 11.72,
+          "components": 1,
+          "largestLegKm": 227.04,
+          "jumpRatio": 9.75
+        },
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-06-upland-basin.webp",
+        "title": "呼伦贝尔 × 阿尔山 · 旅行路线",
+        "ariaLabel": "内蒙古模板化旅行路线示意图，共10天",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "内蒙古",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 1,
+            "color": "#397dc1",
+            "placeIds": [
+              "hld-airport",
+              "hailar",
+              "yimin-river",
+              "hulunbuir-old"
+            ],
+            "paths": [
+              "M834.55 541.17 C796.7 547.5 760.1 543.1 727 528.17 C729.8 547.8 737.8 565.2 750.31 579.14 C756.7 561.4 767.4 546.8 781.78 536.14"
+            ],
+            "overviewPaths": [
+              "M834.55 541.17 C796.7 547.5 760.1 543.1 727 528.17 C744.8 536.4 763.5 539.1 781.78 536.14"
+            ]
+          },
+          {
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "hailar",
+              "erguna-wet",
+              "erguna-town",
+              "birch-forest",
+              "aoluguya",
+              "genhe"
+            ],
+            "paths": [
+              "M727 528.17 C766.9 482.1 791.1 428.9 798.25 371.74 C817.0 375.8 833.1 384.5 845.7 397.55 C859.8 377.8 867.3 355.8 868 332.82 C879.1 315.7 893.9 303.0 911.58 295.37 C928.4 305.3 946.6 309.8 965.11 308.73"
+            ],
+            "overviewPaths": [
+              "M727 528.17 C813.0 467.5 875.8 388.3 911.58 295.37 C931.1 294.6 949.3 299.1 965.11 308.73"
+            ]
+          },
+          {
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "genhe",
+              "moerdaoga-np",
+              "longshan",
+              "laoyingzui",
+              "shiwei",
+              "linjiang"
+            ],
+            "paths": [
+              "M965.11 308.73 C915.7 278.7 878.4 237.6 855.37 188.02 C858.1 207.6 865.8 224.8 878.25 238.81 C861.5 248.7 843.3 253.2 824.92 252.16 C802.6 234.5 777.3 224.2 750.39 222.03 C766.1 210.2 783.7 203.5 802.24 202.41"
+            ],
+            "overviewPaths": [
+              "M965.11 308.73 C883.4 300.7 810.4 271.2 750.39 222.03 C770.0 220.5 787.6 213.9 802.24 202.41"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "linjiang",
+              "shiwei",
+              "hawuer",
+              "enhe"
+            ],
+            "paths": [
+              "M802.24 202.41 C782.6 203.9 765.0 210.6 750.39 222.03 C781.2 245.8 803.2 276.1 814.93 310.99 C804.4 293.8 790.1 280.9 772.89 272.92"
+            ],
+            "overviewPaths": [
+              "M802.24 202.41 C782.6 203.9 765.0 210.6 750.39 222.03 C763.1 237.1 770.8 254.4 772.89 272.92"
+            ]
+          },
+          {
+            "day": 5,
+            "color": "#8865a5",
+            "placeIds": [
+              "enhe",
+              "taijiwan",
+              "heishantou",
+              "heishantou-sun"
+            ],
+            "paths": [
+              "M772.89 272.92 C774.7 292.8 771.0 311.5 761.99 328.12 C745.1 361.1 738.5 396.1 742.6 430.92 C735.9 412.6 734.7 393.9 739.05 376"
+            ],
+            "overviewPaths": [
+              "M772.89 272.92 C778.4 329.7 768.1 383.4 742.6 430.92 C746.9 411.9 745.7 393.2 739.05 376"
+            ]
+          },
+          {
+            "day": 6,
+            "color": "#df6185",
+            "placeIds": [
+              "heishantou",
+              "yunduo-ranch",
+              "morigele"
+            ],
+            "paths": [
+              "M742.6 430.92 C761.8 435.9 780.8 435.3 798.51 429.09 C811.0 445.3 818.1 463.6 819.41 482.96"
+            ],
+            "overviewPaths": [
+              "M742.6 430.92 C763.5 456.3 789.6 474.0 819.41 482.96"
+            ]
+          },
+          {
+            "day": 7,
+            "color": "#397dc1",
+            "placeIds": [
+              "morigele",
+              "hailar",
+              "honghuaerji",
+              "lanfangzi",
+              "arxan-np"
+            ],
+            "paths": [
+              "M819.41 482.96 C792.5 507.6 761.1 522.9 727 528.17 C732.9 584.5 753.5 634.7 787.67 675.87 C800.7 705.1 804.8 735.6 799.71 765.52 C805.6 783.5 815.9 798.5 829.96 809.63"
+            ],
+            "overviewPaths": [
+              "M819.41 482.96 C792.5 507.6 761.1 522.9 727 528.17 C732.9 584.5 753.5 634.7 787.67 675.87 C815.4 717.1 829.8 762.6 829.96 809.63"
+            ]
+          },
+          {
+            "day": 8,
+            "color": "#e77e22",
+            "placeIds": [
+              "arxan-np",
+              "budonghe",
+              "tuofengling",
+              "daxiagu",
+              "shitanglin",
+              "dujuanhu",
+              "santanxia",
+              "arxan-city"
+            ],
+            "paths": [
+              "M829.96 809.63 C853.2 833.6 881.1 849.4 912.01 856 C887.4 811.6 876.7 764.0 880.68 716.15 C858.4 761.3 850.1 808.8 856.24 856 C865.9 818.4 885.0 786.5 912.33 761.99 C898.7 776.5 890.1 793.5 886.99 812.04 C872.0 798.3 861.9 781.7 857.24 762.99 C808.5 783.0 769.0 814.6 741.15 856"
+            ],
+            "overviewPaths": [
+              "M829.96 809.63 C795.1 816.5 764.9 832.3 741.15 856"
+            ]
+          },
+          {
+            "day": 9,
+            "color": "#618344",
+            "placeIds": [
+              "arxan-city",
+              "wuliquan",
+              "arxan-station",
+              "hailar"
+            ],
+            "paths": [
+              "M741.15 856 C744.4 836.6 752.6 819.6 765.31 806.03 C771.0 824.9 781.3 840.8 795.72 852.67 C743.0 748.6 719.6 638.2 727 528.17"
+            ],
+            "overviewPaths": [
+              "M741.15 856 C706.4 745.8 701.6 634.4 727 528.17"
+            ]
+          },
+          {
+            "day": 10,
+            "color": "#209aaa",
+            "placeIds": [
+              "hailar",
+              "hld-airport"
+            ],
+            "paths": [
+              "M727 528.17 C762.3 543.3 798.8 547.8 834.55 541.17"
+            ],
+            "overviewPaths": [
+              "M727 528.17 C762.3 543.3 798.8 547.8 834.55 541.17"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "hailar",
+            "x": 727,
+            "y": 528.17,
+            "color": "#397dc1",
+            "tx": 695,
+            "ty": 496.17,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "海拉尔"
+            ],
+            "query": "海拉尔 呼伦贝尔",
+            "geo": {
+              "lat": 49.2122,
+              "lng": 119.7361
+            },
+            "days": [
+              1,
+              2,
+              7,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "hld-airport",
+            "x": 834.55,
+            "y": 541.17,
+            "color": "#397dc1",
+            "tx": 912.55,
+            "ty": 479.17,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "海拉尔东山国际机场"
+            ],
+            "query": "海拉尔东山国际机场",
+            "geo": {
+              "lat": 49.205,
+              "lng": 119.825
+            },
+            "days": [
+              1,
+              10
+            ]
+          },
+          {
+            "id": "yimin-river",
+            "x": 750.31,
+            "y": 579.14,
+            "color": "#397dc1",
+            "tx": 828.31,
+            "ty": 655.14,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "伊敏河·成吉思汗广场"
+            ],
+            "query": "成吉思汗广场 海拉尔",
+            "geo": {
+              "lat": 49.21,
+              "lng": 119.74
+            },
+            "days": [
+              1
+            ]
+          },
+          {
+            "id": "hulunbuir-old",
+            "x": 781.78,
+            "y": 536.14,
+            "color": "#397dc1",
+            "tx": 703.78,
+            "ty": 612.14,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "呼伦贝尔古城"
+            ],
+            "query": "呼伦贝尔古城 海拉尔",
+            "geo": {
+              "lat": 49.216,
+              "lng": 119.728
+            },
+            "days": [
+              1
+            ]
+          },
+          {
+            "id": "antifascist",
+            "x": 762.38,
+            "y": 486.02,
+            "color": "#397dc1",
+            "tx": 900.38,
+            "ty": 398.02,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "世界反法西斯战争海拉尔纪念园"
+            ],
+            "query": "世界反法西斯战争海拉尔纪念园",
+            "geo": {
+              "lat": 49.228,
+              "lng": 119.7
+            },
+            "days": []
+          },
+          {
+            "id": "erguna-wet",
+            "x": 798.25,
+            "y": 371.74,
+            "color": "#e77e22",
+            "tx": 720.25,
+            "ty": 309.74,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "额尔古纳·根河湿地景区"
+            ],
+            "query": "根河湿地景区 额尔古纳",
+            "geo": {
+              "lat": 50.26,
+              "lng": 120.14
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "erguna-town",
+            "x": 845.7,
+            "y": 397.55,
+            "color": "#e77e22",
+            "tx": 983.7,
+            "ty": 309.55,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "额尔古纳市区"
+            ],
+            "query": "额尔古纳市",
+            "geo": {
+              "lat": 50.2433,
+              "lng": 120.1839
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "birch-forest",
+            "x": 868,
+            "y": 332.82,
+            "color": "#e77e22",
+            "tx": 1006,
+            "ty": 244.82,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "白桦林景区"
+            ],
+            "query": "白桦林景区 额尔古纳",
+            "geo": {
+              "lat": 50.62,
+              "lng": 120.75
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "aoluguya",
+            "x": 911.58,
+            "y": 295.37,
+            "color": "#e77e22",
+            "tx": 989.58,
+            "ty": 233.37,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "敖鲁古雅使鹿部落"
+            ],
+            "query": "敖鲁古雅使鹿部落景区 根河",
+            "geo": {
+              "lat": 50.78,
+              "lng": 121.47
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "genhe",
+            "x": 965.11,
+            "y": 308.73,
+            "color": "#e77e22",
+            "tx": 1043.11,
+            "ty": 384.73,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "根河"
+            ],
+            "query": "根河市",
+            "geo": {
+              "lat": 50.78,
+              "lng": 121.52
+            },
+            "days": [
+              2,
+              3
+            ]
+          },
+          {
+            "id": "moerdaoga-np",
+            "x": 855.37,
+            "y": 188.02,
+            "color": "#618344",
+            "tx": 993.37,
+            "ty": 100.02,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "莫尔道嘎国家森林公园"
+            ],
+            "query": "莫尔道嘎国家森林公园",
+            "geo": {
+              "lat": 51.38,
+              "lng": 120.45
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "longshan",
+            "x": 878.25,
+            "y": 238.81,
+            "color": "#618344",
+            "tx": 740.25,
+            "ty": 150.81,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "龙山公园"
+            ],
+            "query": "龙山公园 莫尔道嘎",
+            "geo": {
+              "lat": 51.3,
+              "lng": 120.53
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "laoyingzui",
+            "x": 824.92,
+            "y": 252.16,
+            "color": "#618344",
+            "tx": 962.92,
+            "ty": 164.16,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "老鹰嘴"
+            ],
+            "query": "老鹰嘴 额尔古纳",
+            "geo": {
+              "lat": 51.33,
+              "lng": 120.12
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "shiwei",
+            "x": 750.39,
+            "y": 222.03,
+            "color": "#618344",
+            "tx": 718.39,
+            "ty": 190.03,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "室韦"
+            ],
+            "query": "室韦俄罗斯族民族乡",
+            "geo": {
+              "lat": 51.32,
+              "lng": 119.99
+            },
+            "days": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "linjiang",
+            "x": 802.24,
+            "y": 202.41,
+            "color": "#618344",
+            "tx": 724.24,
+            "ty": 278.41,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "临江屯"
+            ],
+            "query": "临江屯 额尔古纳",
+            "geo": {
+              "lat": 51.28,
+              "lng": 120.1
+            },
+            "days": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "enhe",
+            "x": 772.89,
+            "y": 272.92,
+            "color": "#209aaa",
+            "tx": 634.89,
+            "ty": 374.92,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "恩和俄罗斯民族乡"
+            ],
+            "query": "恩和俄罗斯族民族乡",
+            "geo": {
+              "lat": 50.87,
+              "lng": 120.02
+            },
+            "days": [
+              4,
+              5
+            ]
+          },
+          {
+            "id": "hawuer",
+            "x": 814.93,
+            "y": 310.99,
+            "color": "#209aaa",
+            "tx": 676.93,
+            "ty": 412.99,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "哈乌尔河景区"
+            ],
+            "query": "哈乌尔河景区 恩和",
+            "geo": {
+              "lat": 50.8,
+              "lng": 120.1
+            },
+            "days": [
+              4
+            ]
+          },
+          {
+            "id": "taijiwan",
+            "x": 761.99,
+            "y": 328.12,
+            "color": "#8865a5",
+            "tx": 729.99,
+            "ty": 296.12,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "乌兰山·太极湾"
+            ],
+            "query": "太极湾 额尔古纳",
+            "geo": {
+              "lat": 50.35,
+              "lng": 119.72
+            },
+            "days": [
+              5
+            ]
+          },
+          {
+            "id": "heishantou",
+            "x": 742.6,
+            "y": 430.92,
+            "color": "#8865a5",
+            "tx": 664.6,
+            "ty": 506.92,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "黑山头"
+            ],
+            "query": "黑山头镇 额尔古纳",
+            "geo": {
+              "lat": 50.2,
+              "lng": 119.65
+            },
+            "days": [
+              5,
+              6
+            ]
+          },
+          {
+            "id": "heishantou-sun",
+            "x": 739.05,
+            "y": 376,
+            "color": "#8865a5",
+            "tx": 877.05,
+            "ty": 478,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "黑山头日落山"
+            ],
+            "query": "黑山头日落山",
+            "geo": {
+              "lat": 50.19,
+              "lng": 119.63
+            },
+            "days": [
+              5
+            ]
+          },
+          {
+            "id": "yunduo-ranch",
+            "x": 798.51,
+            "y": 429.09,
+            "color": "#df6185",
+            "tx": 830.51,
+            "ty": 397.09,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "云朵牧场"
+            ],
+            "query": "云朵牧场 额尔古纳",
+            "geo": {
+              "lat": 49.9,
+              "lng": 119.9
+            },
+            "days": [
+              6
+            ]
+          },
+          {
+            "id": "morigele",
+            "x": 819.41,
+            "y": 482.96,
+            "color": "#df6185",
+            "tx": 957.41,
+            "ty": 584.96,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "莫日格勒河北岸·图嘎营地"
+            ],
+            "query": "莫日格勒河 陈巴尔虎旗",
+            "geo": {
+              "lat": 49.55,
+              "lng": 120.1
+            },
+            "days": [
+              6,
+              7
+            ]
+          },
+          {
+            "id": "honghuaerji",
+            "x": 787.67,
+            "y": 675.87,
+            "color": "#397dc1",
+            "tx": 649.67,
+            "ty": 777.87,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "红花尔基樟子松国家森林公园"
+            ],
+            "query": "红花尔基樟子松国家森林公园",
+            "geo": {
+              "lat": 48.19,
+              "lng": 119.91
+            },
+            "days": [
+              7
+            ]
+          },
+          {
+            "id": "lanfangzi",
+            "x": 799.71,
+            "y": 765.52,
+            "color": "#397dc1",
+            "tx": 937.71,
+            "ty": 867.52,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "蓝房子"
+            ],
+            "query": "蓝房子 阿尔山",
+            "geo": {
+              "lat": 47.2,
+              "lng": 120.1
+            },
+            "days": [
+              7
+            ]
+          },
+          {
+            "id": "arxan-city",
+            "x": 741.15,
+            "y": 856,
+            "color": "#e77e22",
+            "tx": 773.15,
+            "ty": 906,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "阿尔山市区"
+            ],
+            "query": "阿尔山市",
+            "geo": {
+              "lat": 47.17,
+              "lng": 119.94
+            },
+            "days": [
+              8,
+              9
+            ]
+          },
+          {
+            "id": "arxan-station",
+            "x": 795.72,
+            "y": 852.67,
+            "color": "#618344",
+            "tx": 763.72,
+            "ty": 902.67,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "阿尔山火车站"
+            ],
+            "query": "阿尔山火车站",
+            "geo": {
+              "lat": 47.175,
+              "lng": 119.943
+            },
+            "days": [
+              9
+            ]
+          },
+          {
+            "id": "wuliquan",
+            "x": 765.31,
+            "y": 806.03,
+            "color": "#618344",
+            "tx": 627.31,
+            "ty": 718.03,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "五里泉"
+            ],
+            "query": "五里泉 阿尔山",
+            "geo": {
+              "lat": 47.21,
+              "lng": 119.96
+            },
+            "days": [
+              9
+            ]
+          },
+          {
+            "id": "budonghe",
+            "x": 912.01,
+            "y": 856,
+            "color": "#e77e22",
+            "tx": 1050.01,
+            "ty": 768,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "不冻河"
+            ],
+            "query": "不冻河 阿尔山",
+            "geo": {
+              "lat": 47.25,
+              "lng": 120.65
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "tuofengling",
+            "x": 880.68,
+            "y": 716.15,
+            "color": "#e77e22",
+            "tx": 912.68,
+            "ty": 684.15,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "驼峰岭天池"
+            ],
+            "query": "驼峰岭天池 阿尔山",
+            "geo": {
+              "lat": 47.47,
+              "lng": 120.83
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "daxiagu",
+            "x": 856.24,
+            "y": 856,
+            "color": "#e77e22",
+            "tx": 994.24,
+            "ty": 958,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "阿尔山大峡谷"
+            ],
+            "query": "阿尔山大峡谷",
+            "geo": {
+              "lat": 47.28,
+              "lng": 120.7
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "shitanglin",
+            "x": 912.33,
+            "y": 761.99,
+            "color": "#e77e22",
+            "tx": 990.33,
+            "ty": 837.99,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "石塘林"
+            ],
+            "query": "石塘林 阿尔山",
+            "geo": {
+              "lat": 47.4,
+              "lng": 120.8
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "dujuanhu",
+            "x": 886.99,
+            "y": 812.04,
+            "color": "#e77e22",
+            "tx": 964.99,
+            "ty": 750.04,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "杜鹃湖"
+            ],
+            "query": "杜鹃湖 阿尔山",
+            "geo": {
+              "lat": 47.35,
+              "lng": 120.85
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "santanxia",
+            "x": 857.24,
+            "y": 762.99,
+            "color": "#e77e22",
+            "tx": 825.24,
+            "ty": 730.99,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "三潭峡"
+            ],
+            "query": "三潭峡 阿尔山",
+            "geo": {
+              "lat": 47.2,
+              "lng": 120.6
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "arxan-np",
+            "x": 829.96,
+            "y": 809.63,
+            "color": "#397dc1",
+            "tx": 691.96,
+            "ty": 911.63,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "阿尔山国家森林公园"
+            ],
+            "query": "阿尔山国家森林公园",
+            "geo": {
+              "lat": 47.3,
+              "lng": 120.75
+            },
+            "days": [
+              7,
+              8
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "hailar",
+          "aoluguya",
+          "genhe",
+          "shiwei",
+          "enhe",
+          "heishantou",
+          "morigele",
+          "honghuaerji",
+          "arxan-np",
+          "arxan-city"
+        ],
+        "dailyLayouts": {
+          "1": {
+            "places": [
+              "hld-airport",
+              "hailar",
+              "yimin-river",
+              "hulunbuir-old"
+            ],
+            "labels": {
+              "hld-airport": {
+                "x": 912.55,
+                "y": 479.17,
+                "anchor": "start"
+              },
+              "hailar": {
+                "x": 695,
+                "y": 496.17,
+                "anchor": "end"
+              },
+              "yimin-river": {
+                "x": 828.31,
+                "y": 655.14,
+                "anchor": "start"
+              },
+              "hulunbuir-old": {
+                "x": 703.78,
+                "y": 612.14,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 780.77,
+                "y": 534.67
+              },
+              {
+                "items": [],
+                "x": 738.65,
+                "y": 553.65
+              },
+              {
+                "items": [],
+                "x": 766.04,
+                "y": 557.64
+              }
+            ]
+          },
+          "2": {
+            "places": [
+              "hailar",
+              "erguna-wet",
+              "erguna-town",
+              "birch-forest",
+              "aoluguya",
+              "genhe"
+            ],
+            "labels": {
+              "hailar": {
+                "x": 695,
+                "y": 496.17,
+                "anchor": "end"
+              },
+              "erguna-wet": {
+                "x": 720.25,
+                "y": 309.74,
+                "anchor": "end"
+              },
+              "erguna-town": {
+                "x": 983.7,
+                "y": 309.55,
+                "anchor": "start"
+              },
+              "birch-forest": {
+                "x": 1006,
+                "y": 244.82,
+                "anchor": "start"
+              },
+              "aoluguya": {
+                "x": 989.58,
+                "y": 233.37,
+                "anchor": "start"
+              },
+              "genhe": {
+                "x": 1043.11,
+                "y": 384.73,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 762.63,
+                "y": 449.95
+              },
+              {
+                "items": [],
+                "x": 821.98,
+                "y": 384.64
+              },
+              {
+                "items": [],
+                "x": 856.85,
+                "y": 365.19
+              },
+              {
+                "items": [],
+                "x": 889.79,
+                "y": 314.1
+              },
+              {
+                "items": [],
+                "x": 938.35,
+                "y": 302.05
+              }
+            ]
+          },
+          "3": {
+            "places": [
+              "genhe",
+              "moerdaoga-np",
+              "longshan",
+              "laoyingzui",
+              "shiwei",
+              "linjiang"
+            ],
+            "labels": {
+              "genhe": {
+                "x": 1043.11,
+                "y": 384.73,
+                "anchor": "start"
+              },
+              "moerdaoga-np": {
+                "x": 993.37,
+                "y": 100.02,
+                "anchor": "start"
+              },
+              "longshan": {
+                "x": 740.25,
+                "y": 150.81,
+                "anchor": "end"
+              },
+              "laoyingzui": {
+                "x": 962.92,
+                "y": 164.16,
+                "anchor": "start"
+              },
+              "shiwei": {
+                "x": 718.39,
+                "y": 190.03,
+                "anchor": "end"
+              },
+              "linjiang": {
+                "x": 724.24,
+                "y": 278.41,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 910.24,
+                "y": 248.38
+              },
+              {
+                "items": [],
+                "x": 866.81,
+                "y": 213.42
+              },
+              {
+                "items": [],
+                "x": 851.59,
+                "y": 245.49
+              },
+              {
+                "items": [],
+                "x": 787.65,
+                "y": 237.09
+              },
+              {
+                "items": [],
+                "x": 776.32,
+                "y": 212.22
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "linjiang",
+              "shiwei",
+              "hawuer",
+              "enhe"
+            ],
+            "labels": {
+              "linjiang": {
+                "x": 724.24,
+                "y": 278.41,
+                "anchor": "end"
+              },
+              "shiwei": {
+                "x": 718.39,
+                "y": 190.03,
+                "anchor": "end"
+              },
+              "hawuer": {
+                "x": 676.93,
+                "y": 412.99,
+                "anchor": "end"
+              },
+              "enhe": {
+                "x": 634.89,
+                "y": 374.92,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 776.32,
+                "y": 212.22
+              },
+              {
+                "items": [],
+                "x": 782.66,
+                "y": 266.51
+              },
+              {
+                "items": [],
+                "x": 793.91,
+                "y": 291.96
+              }
+            ]
+          },
+          "5": {
+            "places": [
+              "enhe",
+              "taijiwan",
+              "heishantou",
+              "heishantou-sun"
+            ],
+            "labels": {
+              "enhe": {
+                "x": 634.89,
+                "y": 374.92,
+                "anchor": "end"
+              },
+              "taijiwan": {
+                "x": 729.99,
+                "y": 296.12,
+                "anchor": "end"
+              },
+              "heishantou": {
+                "x": 664.6,
+                "y": 506.92,
+                "anchor": "end"
+              },
+              "heishantou-sun": {
+                "x": 877.05,
+                "y": 478,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 767.44,
+                "y": 300.52
+              },
+              {
+                "items": [],
+                "x": 752.3,
+                "y": 379.52
+              },
+              {
+                "items": [],
+                "x": 740.83,
+                "y": 403.46
+              }
+            ]
+          },
+          "6": {
+            "places": [
+              "heishantou",
+              "yunduo-ranch",
+              "morigele"
+            ],
+            "labels": {
+              "heishantou": {
+                "x": 664.6,
+                "y": 506.92,
+                "anchor": "end"
+              },
+              "yunduo-ranch": {
+                "x": 830.51,
+                "y": 397.09,
+                "anchor": "start"
+              },
+              "morigele": {
+                "x": 957.41,
+                "y": 584.96,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 770.56,
+                "y": 430
+              },
+              {
+                "items": [],
+                "x": 808.96,
+                "y": 456.02
+              }
+            ]
+          },
+          "7": {
+            "places": [
+              "morigele",
+              "hailar",
+              "honghuaerji",
+              "lanfangzi",
+              "arxan-np"
+            ],
+            "labels": {
+              "morigele": {
+                "x": 957.41,
+                "y": 584.96,
+                "anchor": "start"
+              },
+              "hailar": {
+                "x": 695,
+                "y": 496.17,
+                "anchor": "end"
+              },
+              "honghuaerji": {
+                "x": 649.67,
+                "y": 777.87,
+                "anchor": "end"
+              },
+              "lanfangzi": {
+                "x": 937.71,
+                "y": 867.52,
+                "anchor": "start"
+              },
+              "arxan-np": {
+                "x": 691.96,
+                "y": 911.63,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 773.2,
+                "y": 505.56
+              },
+              {
+                "items": [],
+                "x": 757.34,
+                "y": 602.02
+              },
+              {
+                "items": [],
+                "x": 793.69,
+                "y": 720.69
+              },
+              {
+                "items": [],
+                "x": 814.84,
+                "y": 787.58
+              }
+            ]
+          },
+          "8": {
+            "places": [
+              "arxan-np",
+              "budonghe",
+              "tuofengling",
+              "daxiagu",
+              "shitanglin",
+              "dujuanhu",
+              "santanxia",
+              "arxan-city"
+            ],
+            "labels": {
+              "arxan-np": {
+                "x": 691.96,
+                "y": 911.63,
+                "anchor": "end"
+              },
+              "budonghe": {
+                "x": 1050.01,
+                "y": 768,
+                "anchor": "start"
+              },
+              "tuofengling": {
+                "x": 912.68,
+                "y": 684.15,
+                "anchor": "start"
+              },
+              "daxiagu": {
+                "x": 994.24,
+                "y": 958,
+                "anchor": "start"
+              },
+              "shitanglin": {
+                "x": 990.33,
+                "y": 837.99,
+                "anchor": "start"
+              },
+              "dujuanhu": {
+                "x": 964.99,
+                "y": 750.04,
+                "anchor": "start"
+              },
+              "santanxia": {
+                "x": 825.24,
+                "y": 730.99,
+                "anchor": "end"
+              },
+              "arxan-city": {
+                "x": 773.15,
+                "y": 906,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 870.99,
+                "y": 832.82
+              },
+              {
+                "items": [],
+                "x": 896.35,
+                "y": 786.08
+              },
+              {
+                "items": [],
+                "x": 868.46,
+                "y": 786.08
+              },
+              {
+                "items": [],
+                "x": 884.29,
+                "y": 809
+              },
+              {
+                "items": [],
+                "x": 899.66,
+                "y": 787.01
+              },
+              {
+                "items": [],
+                "x": 872.12,
+                "y": 787.51
+              },
+              {
+                "items": [],
+                "x": 799.19,
+                "y": 809.5
+              }
+            ]
+          },
+          "9": {
+            "places": [
+              "arxan-city",
+              "wuliquan",
+              "arxan-station",
+              "hailar"
+            ],
+            "labels": {
+              "arxan-city": {
+                "x": 773.15,
+                "y": 906,
+                "anchor": "start"
+              },
+              "wuliquan": {
+                "x": 627.31,
+                "y": 718.03,
+                "anchor": "end"
+              },
+              "arxan-station": {
+                "x": 763.72,
+                "y": 902.67,
+                "anchor": "end"
+              },
+              "hailar": {
+                "x": 695,
+                "y": 496.17,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 753.23,
+                "y": 831.01
+              },
+              {
+                "items": [],
+                "x": 780.51,
+                "y": 829.35
+              },
+              {
+                "items": [],
+                "x": 761.36,
+                "y": 690.42
+              }
+            ]
+          },
+          "10": {
+            "places": [
+              "hailar",
+              "hld-airport"
+            ],
+            "labels": {
+              "hailar": {
+                "x": 695,
+                "y": 496.17,
+                "anchor": "end"
+              },
+              "hld-airport": {
+                "x": 912.55,
+                "y": 479.17,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 780.77,
+                "y": 534.67
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
