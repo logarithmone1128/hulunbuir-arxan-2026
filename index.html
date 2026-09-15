@@ -13,9 +13,9 @@
   <script src="runtime-storage.js?v=20260910-2" defer></script>
   <script src="overview-map.js?v=20260910-2" defer></script>
   <script src="route-ui.js?v=20260910-2" defer></script>
-  <script src="app.js?v=20260910-4" defer></script>
+  <script src="app.js?v=20260915-1" defer></script>
   <script src="ticket-pdf-preview.js?v=20260910-2" defer></script>
-  <script src="ledger.js?v=20260910-3" defer></script>
+  <script src="ledger.js?v=20260915-1" defer></script>
   <script src="site-navigation.js?v=20260910-2" defer></script>
 </head>
 <body>
@@ -47,8 +47,8 @@
     <section class="section flights-section" id="flights" aria-labelledby="flights-title" data-module="flights" hidden>
       <div class="section-heading">
         <div>
-          <p class="section-kicker">BOARDING</p>
-          <h2 id="flights-title">航班行程</h2>
+          <p class="section-kicker">TRANSPORT</p>
+          <h2 id="flights-title">大交通</h2>
         </div>
         <p class="section-index" id="flight-index" aria-live="polite">1 / 3</p>
       </div>
@@ -144,5 +144,26 @@
     <strong>行程暂时无法载入</strong>
     <span>请确认 trip-data.json 已通过生成校验，并与网页位于同一目录。</span>
   </div>
+<script>
+  // 存储健康探针：某些 App 内置浏览器（飞书/微信）和无痕模式会禁用或在关闭后清空
+  // localStorage，导致勾选的 To Do、记的账在重开后消失。这里把静默失败变成可见提示。
+  (function () {
+    var ok = false;
+    try {
+      var k = "__storage_probe__";
+      localStorage.setItem(k, "1");
+      ok = localStorage.getItem(k) === "1";
+      localStorage.removeItem(k);
+    } catch (e) { ok = false; }
+    if (ok) return;
+    document.addEventListener("DOMContentLoaded", function () {
+      var bar = document.createElement("div");
+      bar.setAttribute("role", "alert");
+      bar.style.cssText = "position:sticky;top:0;z-index:99;padding:10px 16px;background:#7a2e1b;color:#fff;font-size:13px;line-height:1.5;";
+      bar.textContent = "当前浏览器禁止本地存储：你勾选的待办和记的账在关闭页面后会丢失。请用 Safari 或 Chrome 打开本页，不要在飞书/微信内置浏览器或无痕模式中使用。";
+      document.body.insertBefore(bar, document.body.firstChild);
+    });
+  })();
+</script>
 </body>
 </html>

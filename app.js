@@ -203,8 +203,13 @@ function journeyStatusAndTarget(flights) {
   for (const flight of flights) {
     const departure = localDateTime(flight.departure.date, flight.departure.time, flight.departure.airportCode, flight.departure.utcOffset);
     const arrival = localDateTime(flight.arrival.date, flight.arrival.time, flight.arrival.airportCode, flight.arrival.utcOffset);
-    if (now < departure) return { target: departure, label: flight === flights[0] ? "距离起飞还剩" : "距离下一程起飞还剩", complete: false };
-    if (now < arrival) return { target: arrival, label: "飞行中 · 距抵达", complete: false };
+    const rail = String(flight.mode || "") === "rail";
+    if (now < departure) {
+      const first = rail ? "距离发车还剩" : "距离起飞还剩";
+      const next = rail ? "距离下一程发车还剩" : "距离下一程起飞还剩";
+      return { target: departure, label: flight === flights[0] ? first : next, complete: false };
+    }
+    if (now < arrival) return { target: arrival, label: rail ? "运行中 · 距抵达" : "飞行中 · 距抵达", complete: false };
   }
   return { target: null, label: "已抵达", complete: true };
 }
@@ -312,7 +317,7 @@ function flightCard(journey, index) {
   return `
     <article class="flight-card" data-journey="${escapeHtml(journey.id)}">
       <div class="flight-card__top">
-        <span>FLIGHT ${String(index + 1).padStart(2, "0")} / ${String(state.data.flightJourneys.length).padStart(2, "0")}</span>
+        <span>${String(flights[0]?.mode || "") === "rail" ? "TRAIN" : "FLIGHT"} ${String(index + 1).padStart(2, "0")} / ${String(state.data.flightJourneys.length).padStart(2, "0")}</span>
       </div>
       <div class="flight-card__airlines">${escapeHtml([...new Set(flights.map((flight) => flight.airline.nameZh || flight.airline.name))].join(" · "))}</div>
       <div class="flight-flow" style="--route-columns: ${stops.map((_, stopIndex) => stopIndex < stops.length - 1 ? "minmax(0,1fr) minmax(34px,.5fr)" : "minmax(0,1fr)").join(" ")}">
