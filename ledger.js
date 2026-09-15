@@ -252,7 +252,14 @@
   function normalizeData(raw) {
     const fallback = defaultData();
     if (!raw || typeof raw !== "object") return fallback;
-    const rawTravelers = Array.isArray(raw.travelers) ? raw.travelers : [];
+    // Seed travelers from trip-data.json > ledger.travelers when the user has none yet.
+    // Purely an initialization fallback: once the user edits the list, storage wins.
+    const seededTravelers = Array.isArray(globalThis.TRAVEL_PLAN_DATA?.ledger?.travelers)
+      ? globalThis.TRAVEL_PLAN_DATA.ledger.travelers
+      : [];
+    const rawTravelers = Array.isArray(raw.travelers) && raw.travelers.length
+      ? raw.travelers
+      : seededTravelers;
     const usedIds = new Set();
     const travelers = rawTravelers.flatMap((traveler, index) => {
       const name = String(traveler?.name || "").trim().slice(0, 30);
